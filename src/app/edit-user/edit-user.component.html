@@ -1,0 +1,32 @@
+    <div class="container" *ngIf="editForm">
+
+<form [formGroup]="editForm">
+
+        <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center font-italic"> Edit Form</h1>
+            </div>
+            <div class="col-md-6 mt-2 mb-2">
+                <label>ENTER THE FIRST NAME</label>
+                <input class="form-control "  type="text"  formControlName="firstName">
+            </div>
+            <div class="col-md-6 mt-2 mb-2">
+                <label>ENTER THE last name</label>
+                <input class="form-control "  type="text" formControlName="lastName">
+            </div>
+            <div class="col-md-6 mt-2 mb-2">
+                <label>ENTER THE PHONE NUMBER</label>
+                <input class="form-control "  type="text"  formControlName="phoneNumber">
+            </div>
+            <div class="col-md-6 mt-2 mb-2">
+                <label >ENTER THE AGE</label>
+                <input class="form-control "  type="number" formControlName="age">
+            </div>
+            <div class="col-md-12 text-center mt-4">
+                   <button (click)="updateData()" class="btn btn-primary" >submit</button>
+              
+            </div>
+        </div>
+    </form>
+
+    </div>
